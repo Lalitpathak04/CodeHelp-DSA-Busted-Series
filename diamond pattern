@@ -1,0 +1,54 @@
+//is this a efficient code
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, i = 1;
+    cin>>n;
+    while(i<=n){
+        int j = 1;
+        while(j<=(n-i)){
+            cout<<" ";
+            j++;
+            
+        }
+        int k = 1;
+        while(k<=i){
+            cout<<"*";
+            k++;
+        }
+        int a = i-1;
+        while(a){
+            cout<<"*";
+            a--;
+        }
+        cout<<endl;
+        i++;
+    }
+    int b = 1;
+   while(b<=(n-1))
+   {
+       int c = 1;
+       while(c<=b){
+           cout<<" ";
+           c++;
+           
+       }
+       int d = 1;
+       while(d<=(n-b)){
+       cout<<"*";
+       d++;
+   }
+    int e = 1;
+       while(e<=(n-b-1)){
+       cout<<"*";
+       e++;
+   }
+   cout<<endl;
+   b++;
+   }
+    return 0;
+}
